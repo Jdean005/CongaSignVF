@@ -1,0 +1,15 @@
+<apex:page standardController="Opportunity" lightningstylesheets="true">
+    <apex:form >
+    <apex:commandButton value="Button Label Goes Here"
+
+action="{!URLFOR($Action.ObjectLabel.View,ObjectLabel.Id)}"
+
+onclick="openConga()"/>
+</apex:form>
+<Script Language="JavaScript">
+
+function openConga() { window.open('{!URLFOR($Action.Object.CongaSignButtonLabel,Object.Id)}', '','scrollbars=yes,menubar=no,height=600,width=800,resizable=yes, toolbar=no,location=no,status=yes'); }
+
+</Script>
+</apex:page>
+               
